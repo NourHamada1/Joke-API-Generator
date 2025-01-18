@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <title>Joke Search API</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="joke-area">
+          <p>
+            <%= joke %>
+          </p>
+        </div>
+        <form id="myForm" method="post">
+         
+          <label for="search"></label>
+          <input class="search-joke"
+            type="text"
+            id="search"
+            placeholder="Search for a Joke!"
+            name="search"
+          />
+    
+    
+          <label for="submit">Route:</label>
+          <input id="get" type="submit" value="GET" formaction="/post-joke">
+
+
+        </form>
+
+  </body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <title>Joke Search API</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="joke-area">
+        <p><%= joke %></p>
+      </div>
+      <form id="myForm" method="post">
+        <label for="search"></label>
+        <input
+          class="search-joke"
+          type="text"
+          id="search"
+          placeholder="Search for a Joke!"
+          name="search"
+        />
+        <label for="submit">Route:</label>
+        <input id="get" type="submit" value="GET" formaction="/post-joke">
+      </form>
+    </div>
+  </body>
+</html> -->
